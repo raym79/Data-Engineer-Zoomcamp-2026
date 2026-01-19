@@ -85,3 +85,28 @@ once we see 'root@xxxx:', we are inside of image
             * A:B -> mapping A to B 
 
 # 02-virtual-environment
+1. virtual environment
+    * initiate a virtual environment
+        * ```uv init --python 3.13```
+    * add dependencies
+        * ``` uv add pandas, pyarrow ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
