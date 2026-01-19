@@ -8,9 +8,9 @@
     * python3 -v: verbose mode; Prints every module imported during startup and then starts the REPL
     * python3 -V: version; Prints Python version and exits
     * ctrl+D to exit verbose mode
-3. PS1="> "
+3. ``` PS1="> " ```
     * to changes terminal prompt to simply '> '
-    * echo 'PS1="> "' > ~/.bashrc: apply to new terminal
+    * apply to new terminal: ``` echo 'PS1="> "' > ~/.bashrc ```
 4. docker run hello-world
     * see 'Hello from Docker!' meaning docker is runnning properly
 5. docker run xxxx
@@ -83,6 +83,10 @@ once we see 'root@xxxx:', we are inside of image
         * notes
             * $(pwd): current working directory
             * A:B -> mapping A to B 
+            * after running command above, we are inside the container
+            * we can see the all the file in app/test/
+            * we can also execute script.py to check the files
+            * [add image '01-docker-volume']
 
 # 02-virtual-environment
 1. virtual environment
