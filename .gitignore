@@ -1,7 +1,0 @@
-*.parquet
-# Ignore all Parquet files in the virtual environment
-
-__pycache__/
-*.py[cod]
-*$py.class
-# Ignore Python cache files
