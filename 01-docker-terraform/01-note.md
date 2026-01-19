@@ -94,24 +94,28 @@ once we see 'root@xxxx:', we are inside of image
         * ```uv init --python 3.13```
     * add dependencies
         * ``` uv add pandas, pyarrow ```
-    * gitignore
-2. Create custom Docker image with a Dockerfile
-    *
+    * ```.gitignore``` config
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 03-Dockerizing the Pipeline
+> Create custom Docker image with a Dockerfile
+1. Dockerfile:
+    * A Dockerfile is a recipe that tells Docker how to build an image
+    * build:
+        * ``` docker build -t test:pandas . ```
+    * run:
+        * ``` docker run -it --entrypoint=bash --rm test:pandas ```
+    * inside container after run:
+        * we can run ``` python pipeline.py 12 ``` to get proper result
+    * extra step:
+        * we can also change the entry point 
+        * ENTRYPOINT = what this container is
+        * Now we can directly run with
+            * ``` docker build -t test:pandas .```
+            * ``` docker run -it --rm test:pandas 12 ``` 
+2. Dockerfile with uv
+    * copy uv path
+    * copy dependency metadata
+    * Install dependencies
 
 
 
