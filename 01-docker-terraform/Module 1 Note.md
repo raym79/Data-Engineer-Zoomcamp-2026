@@ -1,4 +1,4 @@
-
+# 01-docker-terraform
 1. docker
     * check docker if install properly
 2. python -V
@@ -83,4 +83,5 @@ once we see 'root@xxxx:', we are inside of image
         * notes
             * $(pwd): current working directory
             * A:B -> mapping A to B 
-27min
+
+# 02-virtual-environment
