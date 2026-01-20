@@ -136,9 +136,11 @@ docker run -it --rm \
     * run pgcli
         * ``` uv run pgcli -h localhost -p 5432 -u root -d ny_taxi ```
         * pswd is 'root' we created last step
-    * now we want to get csv data with NY_taxi dataset and put them on our Postgres, we need python via jupyter notebook
+    * now we want to get csv data with NY_taxi dataset and put them on our Postgres, we need python via jupyter notebook -> next section
 
 # 05-data-ingestion.md
-
-
-
+1. create jupyter notebook, use token to login on web
+2. our goal is to put this [yellow_tripdata_2021-01.csv.gz](https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/yellow_tripdata_2021-01.csv.gz) data in cvs file to our Postgres db
+3. we use pandas on jupyter notebook to process data  
+check jupyter notebook for more details  
+cont. at 1:22
