@@ -117,6 +117,28 @@ once we see 'root@xxxx:', we are inside of image
     * copy dependency metadata
     * Install dependencies
 
+# 04-postgres-docker
+1. create folder for Postgres to store data in
+``` 
+docker run -it --rm \
+  -e POSTGRES_USER="root" \
+  -e POSTGRES_PASSWORD="root" \
+  -e POSTGRES_DB="ny_taxi" \
+  -v ny_taxi_postgres_data:/var/lib/postgresql \
+  -p 5432:5432 \
+  postgres:18
+```
+
+2. connect to PostgreSQL
+    * log into database with pgcli
+    * add dev  dev dependency ``` uv add --dev pgcli ```
+        * only need for development, we need pgcli in dev environment
+    * run pgcli
+        * ``` uv run pgcli -h localhost -p 5432 -u root -d ny_taxi ```
+        * pswd is 'root' we created last step
+    * now we want to get csv data with NY_taxi dataset and put them on our Postgres, we need python via jupyter notebook
+
+# 05-data-ingestion.md
 
 
 
