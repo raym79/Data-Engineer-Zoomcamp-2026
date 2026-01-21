@@ -148,3 +148,7 @@ check jupyter notebook for more details
 cont. at 1:22
 4. At end of this section, we have a jupyter notebook. Next, we will convert it into a Python script. 
 
+# 06-ingestion-script
+1. convert jupter notebook to script using `uv run jupyter nbconvert --to=script notebook.ipynb`
+2. rename `mv notebook.py ingest_data.py`
+3. optimize data ingestion in `ingest_data.py`
