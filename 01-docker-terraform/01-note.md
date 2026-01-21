@@ -139,8 +139,12 @@ docker run -it --rm \
     * now we want to get csv data with NY_taxi dataset and put them on our Postgres, we need python via jupyter notebook -> next section
 
 # 05-data-ingestion.md
-1. create jupyter notebook, use token to login on web
+1. create jupyter notebook, use token to login on web  
+    ` uv add --dev jupyter `
+    ` uv run jupyter notebook `
 2. our goal is to put this [yellow_tripdata_2021-01.csv.gz](https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/yellow_tripdata_2021-01.csv.gz) data in cvs file to our Postgres db
 3. we use pandas on jupyter notebook to process data  
 check jupyter notebook for more details  
 cont. at 1:22
+4. At end of this section, we have a jupyter notebook. Next, we will convert it into a Python script. 
+
