@@ -168,3 +168,11 @@ uv run python ingest_data.py \
   --month=1 \
   --target-table=yellow_taxi_trips
 ```
+
+# 07-pgadmin
+1. Next we can turn it into dockerized pipeline
+    * go to Dockerfile, inside of `COPY pipeline.py .`, we can `COPY ingest_data.py .`
+    * build docker container `docker build -t taxi_ingest:v001 .`
+2. since the localhost is the not localhost in container, we need to create network. things in network can see each other. `docker network create pg-network`
+
+# 08-dockerizing-ingestion
