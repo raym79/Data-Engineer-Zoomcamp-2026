@@ -152,3 +152,19 @@ cont. at 1:22
 1. convert jupter notebook to script using `uv run jupyter nbconvert --to=script notebook.ipynb`
 2. rename `mv notebook.py ingest_data.py`
 3. optimize data ingestion in `ingest_data.py`
+    * run `uv run python ingest_data.py` command, data successfully insert into target table
+4. next, we want to use command line to input parameters  
+    * For example, specify year = 2022, month = 7, etc. 
+5. we need to use click, check code in scipt
+6. use command to run the script  
+``` 
+uv run python ingest_data.py \
+  --pg-user=root \
+  --pg-pass=root \
+  --pg-host=localhost \
+  --pg-port=5432 \
+  --pg-db=ny_taxi \
+  --year=2021 \
+  --month=1 \
+  --target-table=yellow_taxi_trips
+```
