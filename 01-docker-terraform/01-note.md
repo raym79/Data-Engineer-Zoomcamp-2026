@@ -61,9 +61,9 @@ once we see 'root@xxxx:', we are inside of image
     * Write the text 123 into a file named file
     * '>' overwrite
     * '>>' append 
-12. docker ps -a (docker ps -aq: no headers, etc.)
+12. `docker ps -a` (docker ps -aq: no headers, etc.)
     * List all Docker containers on your machine — running and stopped
-13. docker ps -aq 
+13. `docker ps -aq `
 14. Volume
     * What Is a Volume?
         * A Docker volume is a way to store data outside of a container, so that:
@@ -176,3 +176,8 @@ uv run python ingest_data.py \
 2. since the localhost is the not localhost in container, we need to create network. things in network can see each other. `docker network create pg-network`
 
 # 08-dockerizing-ingestion
+
+
+# 09-docker-compose
+1. create docker-compose.yaml file
+2. run `docker -compose up`
