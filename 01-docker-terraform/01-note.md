@@ -93,7 +93,7 @@ once we see 'root@xxxx:', we are inside of image
     * initiate a virtual environment
         * ```uv init --python 3.13```
     * add dependencies
-        * ``` uv add pandas, pyarrow ```
+        * ``` uv add pandas pyarrow ```
     * ```.gitignore``` config
 
 # 03-Dockerizing the Pipeline
