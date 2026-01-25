@@ -181,3 +181,8 @@ uv run python ingest_data.py \
 # 09-docker-compose
 1. create docker-compose.yaml file
 2. run `docker -compose up`
+
+# Summary
+1. Image
+2. Container
+3. Volume
