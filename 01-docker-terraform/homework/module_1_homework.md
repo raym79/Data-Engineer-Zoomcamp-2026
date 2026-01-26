@@ -98,11 +98,6 @@ WHERE dis_rk = 1
 ## Question 5. Biggest pickup zone
 
 Which was the pickup zone with the largest `total_amount` (sum of all trips) on November 18th, 2025?
-
-- East Harlem North
-- East Harlem South
-- Morningside Heights
-- Forest Hills
   
 ### Anwser 
 ```
@@ -124,11 +119,6 @@ For the passengers picked up in the zone named "East Harlem North" in November 2
 
 Note: it's `tip` , not `trip`. We need the name of the zone, not the ID.
 
-- JFK Airport
-- Yorkville West
-- East Harlem North
-- LaGuardia Airport
-  
 ### Anwser 
 ```
 SELECT DISTINCT tz1.zone AS pu_zone
