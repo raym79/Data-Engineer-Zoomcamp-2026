@@ -73,7 +73,6 @@ AND trip_distance <= 1
 - 8,007
 
 
-
 ## Question 4. Longest trip for each day
 
 Which was the pick up day with the longest trip distance? Only consider trips with `trip_distance` less than 100 miles (to exclude data errors).
@@ -153,12 +152,9 @@ Which of the following sequences, respectively, describes the workflow for:
 2. Generating proposed changes and auto-executing the plan
 3. Remove all resources managed by terraform`
 
-Answers:
-- terraform import, terraform apply -y, terraform destroy
-- teraform init, terraform plan -auto-apply, terraform rm
-- terraform init, terraform run -auto-approve, terraform destroy
+### Answers:
 - terraform init, terraform apply -auto-approve, terraform destroy
-- terraform import, terraform apply -y, terraform rm
+
 
 
 ## Submitting the solutions
