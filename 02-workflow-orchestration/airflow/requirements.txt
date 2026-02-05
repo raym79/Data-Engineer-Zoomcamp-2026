@@ -1,0 +1,9 @@
+apache-airflow-providers-google==8.4.0
+
+pyarrow==9.0.0
+pandas==2.1.0
+sqlalchemy==2.0.19
+snowflake-sqlalchemy==1.4.8
+boto3==1.28.6
+google-cloud-storage==2.11.0
+google-cloud-bigquery==3.12.0       
