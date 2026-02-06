@@ -7,3 +7,4 @@ __pycache__/
 
 # Ignore keys folder
 01-docker-terraform/terrademo/keys/
+03-data-warehouse/gcs_cred.json
